@@ -9,5 +9,7 @@ document.getElementById("data-send").addEventListener("click", function (event) 
         prezzoFinale = prezzoFinale * 0.6
     }
 
-    document.getElementById("final-price").innerText = prezzoFinale
+    document.getElementById("tariff").classList.add("d-none")
+    document.getElementById("ticket").innerHTML = `<div><b>Passeggero: </b>${document.getElementById("user-title").value
+        } ${document.getElementById("user-name").value} ${document.getElementById("user-lastname").value}</div> <div><b>Costo del biglietto: </b>${prezzoFinale.toFixed(2)}€</div>`
 }) 
